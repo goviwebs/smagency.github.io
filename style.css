@@ -12,7 +12,7 @@
 .container{
     width: auto;
     height:110vh;
-    background-image:url(../images/backgroudn.jpg);
+    background-image:url(./images/backgroudn.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
