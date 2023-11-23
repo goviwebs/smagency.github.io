@@ -272,11 +272,18 @@ footer{
 footer .container3{
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 3fr 3fr;
     grid-gap: 20px;
 }
 
 footer .container3 .sec_aboutus h2{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container3 .sec_contact h2{
     position: relative;
     color: white;
     font-weight: 500;
@@ -290,6 +297,15 @@ footer .container3 .sec_quicklinks h2{
     margin-bottom: 15px;
 }
 
+footer .container3 .sec_contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(104, 35, 10);
+}
 
 footer .container3 .sec_aboutus h2::before{
     content: '';
@@ -298,7 +314,11 @@ footer .container3 .sec_aboutus h2::before{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #ffeb3b;
+    background: rgb(104, 35, 10);
+}
+
+footer .container3 .sec_quicklinks a:hover{
+    background-color: color;
 }
 
 footer .container3 .sec_quicklinks h2::before{
@@ -308,10 +328,14 @@ footer .container3 .sec_quicklinks h2::before{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #ffeb3b;
+    background: rgb(104, 35, 10)
 }
 
 footer .container3 .sec_aboutus p{
+    color: #fff;
+}
+
+footer .container3 .sec_contact ul li p{
     color: #fff;
 }
 
@@ -321,6 +345,19 @@ footer .container3 .sec_aboutus p{
     grid-template-columns: repeat(3,50px);
     grid-gap: 10px;
 
+}
+
+.sec_quicklinks a{
+    color:yellow
+}
+
+.sec_contact{
+    color: white;
+}
+
+.sec_contact a{
+    color: white;
+    text-decoration: none;
 }
 
 .sci li{
@@ -364,6 +401,10 @@ footer .container3 .sec_aboutus p{
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+}
+
+.sec_quicklinks li a:hover{
+    background-color: transparent;
 }
 
 .sec_quicklinks li a:hover{
